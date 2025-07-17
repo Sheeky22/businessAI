@@ -23,7 +23,9 @@ def marketcopy_generator(product_name,usp,target,brand,api_key):
             "model":"deepseek/deepseek-r1:free",
             "messages":[{
                 "role":"system",
-                "content":"You are a professional marketing copy writer. Write a marketing an effective marketing copy that clearly communicates the value and the benefit of the product to it's target audience. Let the copy be short and crisp. "
+                "content":'''You are a professional marketing copy writer. Write a marketing an effective marketing copy that clearly 
+                communicates the value and the benefit of the product to it's target audience. Let the copy be short and crisp. 
+                Remove all meta-comments or internal notes about the copy. '''
             },
             {
                 "role":"user",
