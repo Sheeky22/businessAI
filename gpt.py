@@ -1,17 +1,17 @@
 import requests
 import json
-import os
-from dotenv import load_dotenv
+# import os
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
-def marketcopy_generator(product_name,usp,target,brand):
+def marketcopy_generator(product_name,usp,target,brand,api_key):
 
-    api_key=os.getenv("OPENROUTER_API_KEY_1")
+    # api_key=os.getenv("OPENROUTER_API_KEY")
 
-    if not api_key:
-        return ("Error: API key not available!!!")
-        exit()
+    # if not api_key:
+    #     return ("Error: API key not available!!!")
+    #     exit()
     
 
     response = requests.post(
