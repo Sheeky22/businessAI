@@ -5,7 +5,7 @@ st.title("Marketing Copy Generator")
 
 brand = st.text_input("What's your brand name? ")
 product_name = st.text_input("What's your product? ")
-usp = st.text_area("What is the USP of your product? ")
+usp = st.text_area("What is the unique selling point of your product? ")
 target = st.text_input("Who is your Target Audience? ")
 
 if st.secrets["OPENROUTER_API_KEY"]:
